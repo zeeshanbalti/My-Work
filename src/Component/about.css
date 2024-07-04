@@ -1,0 +1,69 @@
+
+/* About.css */
+*{
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  font-family: 'Courier New', Courier, monospace;
+}
+body{
+  background-color: #424357 !important; /* Dark gray background */
+  color: #ffffff !important; /* Mint green color for text */
+}
+.about-section {
+    text-align: center;
+    padding: 40px;
+    /* background-color: #f8f8f8; */
+    display: flex;
+    justify-content: center;
+    margin-top: 10rem;
+  }
+  .about-section-text{
+    width: 35%;
+    margin-right: 5rem;
+  }
+  .sliding-image{
+    width: 20rem;
+    height: 19rem;
+    border-radius: 10px;
+  }
+  
+  h2 {
+    /* color: #333; */
+    margin-bottom: 30px;
+    /* font-size: 40px;
+    font-family: 'Courier New', Courier, monospace; */
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 50px;
+    font-weight: bold;
+    
+    /* color: #8eb05b; */
+  text-shadow: 1px 1px 2px #26384a, 0 0 1em #0074e4, 0 0 0.2em #0074e4;
+  }
+  
+  p {
+    /* color: #555; */
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+  
+  /* Responsive Styling */
+  @media (max-width: 768px) {
+    .about-section {
+      padding: 20px;
+    }
+  }
+  
+  .slider-container {
+    overflow: hidden;
+  }
+  
+  .sliding-image {
+    transform: translateX(100%);
+    transition: transform 1s ease-out;
+  }
+  
+  .slider-container.visible .sliding-image {
+    transform: translateX(0);
+  }
+  

@@ -1,0 +1,46 @@
+*{
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  font-family: 'Courier New', Courier, monospace;
+}
+body{
+  background-color: #424357 !important; /* Dark gray background */
+  color: #ffffff !important; /* Mint green color for text */
+}
+
+
+.slider-container {
+    overflow: hidden;
+  }
+  
+  .sliding-image {
+    transition: transform 1s ease-out;
+    width :30rem !important;
+  }
+  
+  .slider-container.visible .left {
+    transform: translateX(0);
+  }
+  
+  .slider-container.visible .right {
+    transform: translateX(0);
+  }
+  
+  .left {
+    transform: translateX(-100%);
+  }
+  
+  .right {
+    transform: translateX(100%);
+  }
+
+  #right-sliding-image{
+    width: 25rem;
+    height: 15rem;
+  }
+  #left-sliding-image{
+    width: 25rem;
+    height: 15rem;
+  }
+  
